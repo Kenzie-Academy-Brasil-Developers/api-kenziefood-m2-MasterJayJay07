@@ -6,6 +6,6 @@ const buscarProdutos = async () => {
     return retorno
 }
 
-const arrProdutos = buscarProdutos()
+const arrProdutos = buscarProdutos();
 
 export {arrProdutos}

@@ -48,3 +48,5 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
 
 }
 construirLayoutPratos(listaDestaque, arrProdutos, "adicionar")
+
+export {construirLayoutPratos};
