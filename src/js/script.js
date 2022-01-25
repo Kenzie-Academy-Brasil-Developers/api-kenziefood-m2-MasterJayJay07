@@ -1,15 +1,12 @@
 import { CardVitrine } from "./models/cardVitrine.js";
 
-const cards = [];
-
-const buildObjects = (array, arrayProdutos) => {
+const construirObjetos = (array) => {
 
     const arrayCards = [];
 
-    array.forEach(element => {
-        let cardObject = new CardVitrine(element); 
-        arrayProdutos.push(cardObject);
-        arrayCards.push(cardObject);
+    array.forEach(elemento => {
+        let objetoCard = new CardVitrine(elemento); 
+        arrayCards.push(objetoCard);
     })
 
     return arrayCards;
@@ -17,18 +14,19 @@ const buildObjects = (array, arrayProdutos) => {
 }
 
 
-const getProducts = (arrayCards) => {
+const buscarProdutos = async () => {
 
-    fetch(`https://kenzie-food-api.herokuapp.com/product`)
-    .then(responseObject => responseObject.json())
-    .then(hydratadeBody => {
-        buildObjects(hydratadeBody, arrayCards);
+    await fetch(`https://kenzie-food-api.herokuapp.com/product`)
+    .then(objetoResposta => objetoResposta.json())
+    .then(res => {
+
+        console.log(res);
+        //aqui vai a função que pega o retorno de construirObjetos e monta a vitrine;
+        //ex: construirVitrine(construirObjectos(res))
       }
         
     );
 
 }
 
-getProducts(cards);
-
-//export {getProducts};
+buscarProdutos();
