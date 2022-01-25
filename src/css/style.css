@@ -1,0 +1,33 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ulPratos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* não pode haver quebra, a lista com produtos deve ser possivel passar para o lado */
+}
+
+.ulPratos li {
+    width: 300px;
+}
+
+.ulPratos li div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ulPratos img {
+    width: 100%;
+    height: 180px;
+}
+
+@media (min-width:720px){
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+}
