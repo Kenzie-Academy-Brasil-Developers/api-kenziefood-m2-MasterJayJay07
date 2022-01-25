@@ -26,7 +26,7 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
         h3.innerText = nome
         p.innerText = descricao
         li.id = id
-        span.innerText = preco.toFixed(2)
+        span.innerText = `R$${preco.toFixed(2)}`
         button.innerText = TipoBotao
         
 
