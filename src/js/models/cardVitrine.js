@@ -1,4 +1,4 @@
-const CardVitrine = class CardVitrine {
+class CardVitrine {
 
     constructor({id, nome, preco, categoria, descricao, imagem}){
         this._id = id;
