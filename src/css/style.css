@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -8,6 +15,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    max-width: 1025px;
     /* não pode haver quebra, a lista com produtos deve ser possivel passar para o lado */
 }
 

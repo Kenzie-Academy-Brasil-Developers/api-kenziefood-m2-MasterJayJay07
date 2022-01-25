@@ -11,11 +11,22 @@
     </head>
     <body>
         <header>
+            <section class="sectionBusca">
+                <input type="text" id="inputDeBusca">
+                <button id="buscar">Buscar</button>
+            </section>
+            <nav id="botaosDoFiltro">
+                <button id="mostrarTodos">Todos</button>
+                <button id="mostrarPanificadora">Panificadora</button>
+                <button id="mostrarFrutas">Frutas</button>
+                <button id="mostrarBebidas">Bebidas</button>
+            </nav>
         </header>
+        
         <main>
             <section class="secaoPratosDestaque">
                 <div class="container">
-                    <h2 class="secaoPratosDestaque__titulo">Pratos</h2>
+                    <h2 class="secaoPratosDestaque__titulo"></h2>
                     <ul class="ulPratos" id="vitrinePrincipal"></ul>
                 </div>
             </section>
@@ -42,6 +53,7 @@
         </main>
         <script type= "module" src="./src/js/fetch_api/script.js"></script>
         <script type= "module" src="./src/js/feature_vitrine/vitrine.js"></script>
+        <script type= "module" src="./src/js/feature_filtro/filtro.js"></script>
     </body>
 
 </html>
