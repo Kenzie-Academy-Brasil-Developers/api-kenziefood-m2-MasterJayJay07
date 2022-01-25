@@ -3,7 +3,7 @@ const listaPratos = [
 		"id": 1,
 		"nome": "Mousse de morango com a fruta",
 		"preco": 27.5,
-		"categoria": "destaques",
+		"categoria": "Frutas",
 		"descricao": "Sobremesa fácil, rápida e muito saborosa: a mousse de morango leva apenas 5 ingredientes; confira como fazer a receita",
 		"imagem": "https://kenzie-academy-brasil.gitlab.io/fullstack/frontend/modulo2/sprint4/img/capstone-images/mousse.png",
 		"createdAt": "2022-01-24T16:25:25.401Z",
@@ -13,7 +13,7 @@ const listaPratos = [
 		"id": 2,
 		"nome": "Panqueca de banana com aveia",
 		"preco": 20,
-		"categoria": "destaques",
+		"categoria": "Panificadora",
 		"descricao": "Esta receita serve muito bem 2 pessoas, deieventa a gente bem satisfeito, se não tiver outra opção de café. Se tiver mais comida, como pães e frutas.",
 		"imagem": "https://kenzie-academy-brasil.gitlab.io/fullstack/frontend/modulo2/sprint4/img/capstone-images/panqueca.png",
 		"createdAt": "2022-01-24T16:26:44.903Z",
@@ -23,7 +23,7 @@ const listaPratos = [
 		"id": 3,
 		"nome": "Pastel de verduras vegano",
 		"preco": 20,
-		"categoria": "destaques",
+		"categoria": "Panificadora",
 		"descricao": "Todos nós fervemos vegetais, salteamos ou consumimos crus. Mas que tal comer vegetais como se fossem um bolo?",
 		"imagem": "https://kenzie-academy-brasil.gitlab.io/fullstack/frontend/modulo2/sprint4/img/capstone-images/pastel.png",
 		"createdAt": "2022-01-24T16:27:32.190Z",
@@ -66,6 +66,8 @@ const listaPratos = [
 const listaDestaque = document.querySelector(".ulPratos")
 const listaCarrinho = document.querySelector('.secaoCarrinho__listaItens');
 const containerTotal = document.querySelector('.secaoCarrinho__total > span');
+const botoesDeFiltro = document.querySelector('#botaosDoFiltro')
+console.log(botoesDeFiltro)
 
 //Função adicionar no carrinho
 
@@ -109,5 +111,6 @@ const construirLayoutPratos = (ulContainer, produtos, TipoBotao) => {
 
 }
 construirLayoutPratos(listaDestaque, listaPratos, "adicionar")
+
 
 //remover listaPratos e adicicionar array do fetch
