@@ -1,6 +1,8 @@
 import {listaDestaque} from "../feature_vitrine/criar_vitrine.js";
 import {construirLayoutPratos} from "../feature_vitrine/criar_vitrine.js";
 import {arrProdutos} from "../fetch_api/fetch_API.js";
+import { addProdutoAoCarrinho } from "../feature_carrinho/adicionar_carrinho.js";
+import { botoesAdicionar } from "../feature_carrinho/adicionar_carrinho.js";
 
 const inputDeBusca = document.querySelector("#inputDeBusca")
 const buttonBuscar = document.querySelector("#buscar")
@@ -17,6 +19,7 @@ const filtrarPorBusca = async (valorInput) => {
         }
     })
     construirLayoutPratos(listaDestaque, listaFiltroDeBusca, "adicionar")
+    addProdutoAoCarrinho(botoesAdicionar, listaFiltroDeBusca);
 }
 
 //Implementando evento de click com a função de filtrar

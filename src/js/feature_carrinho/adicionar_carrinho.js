@@ -22,3 +22,6 @@ const addProdutoAoCarrinho = async (botoes, arrayProdutos) => {
 
 
 addProdutoAoCarrinho(botoesAdicionar, arrProdutos);
+
+export{addProdutoAoCarrinho}
+export {botoesAdicionar};
