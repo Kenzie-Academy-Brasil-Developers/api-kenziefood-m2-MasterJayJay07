@@ -3,7 +3,6 @@ import {CardVitrine} from "./../models/cardVitrine.js"
 import { construirLayoutPratos } from "../feature_vitrine/vitrine.js"
 
 const carrinho = document.querySelector(".secaoCarrinho__listaItens");
-console.log(carrinho);
 const botoesAdicionar = document.getElementsByClassName("adicionar");
 
 const addProdutoAoCarrinho = async (botoes, arrayProdutos) => {
