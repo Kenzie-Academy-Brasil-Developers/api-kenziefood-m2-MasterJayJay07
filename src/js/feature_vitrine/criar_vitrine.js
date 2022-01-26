@@ -1,5 +1,5 @@
 // recebendo objetos da API
-import {arrProdutos} from "../fetch_api/script.js";
+import {arrProdutos} from "../fetch_api/fetch_API.js";
 const listaDestaque = document.querySelector(".ulPratos")
 
 

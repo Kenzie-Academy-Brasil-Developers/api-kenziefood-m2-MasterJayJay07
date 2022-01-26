@@ -1,7 +1,6 @@
 class CardVitrine {
 
     constructor({nome, preco, categoria, imagem}){
-        //this._id = id;
         this._nome = nome;
         this._preco = preco;
         this._categoria = categoria;
@@ -44,7 +43,6 @@ class CardVitrine {
     set imagem(newImagem){
         this._imagem = newImagem;
     }
-
 }
 
 export {CardVitrine}

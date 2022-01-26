@@ -1,6 +1,6 @@
-import {listaDestaque} from "../feature_vitrine/vitrine.js";
-import {construirLayoutPratos} from "../feature_vitrine/vitrine.js";
-import {arrProdutos} from "../fetch_api/script.js";
+import {listaDestaque} from "../feature_vitrine/criar_vitrine.js";
+import {construirLayoutPratos} from "../feature_vitrine/criar_vitrine.js";
+import {arrProdutos} from "../fetch_api/fetch_API.js";
 
 const mostrarTodos = () => {
 	listaDestaque.innerText = ""

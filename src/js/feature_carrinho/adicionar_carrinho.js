@@ -1,9 +1,8 @@
-import {arrProdutos} from "./../fetch_api/script.js"
+import {arrProdutos} from "../fetch_api/fetch_API.js"
 import {CardVitrine} from "./../models/cardVitrine.js"
-import { construirLayoutPratos } from "../feature_vitrine/vitrine.js"
+import {construirLayoutPratos} from "../feature_vitrine/criar_vitrine.js"
 
 const carrinho = document.querySelector(".secaoCarrinho__listaItens");
-console.log(carrinho);
 const botoesAdicionar = document.getElementsByClassName("adicionar");
 
 const addProdutoAoCarrinho = async (botoes, arrayProdutos) => {
