@@ -1,21 +1,14 @@
 class CardVitrine {
 
-    constructor({id, nome, preco, categoria, descricao, imagem}){
-        this._id = id;
+    constructor({nome, preco, categoria, imagem}){
+        //this._id = id;
         this._nome = nome;
         this._preco = preco;
         this._categoria = categoria;
-        this._descricao = descricao;
+        this._descricao = "";
         this._imagem = imagem;
     }
 
-    get id(){
-        return this._id;
-    }
-
-    set id(newId){
-        this._id = newId;
-    }
 
     get nome(){
         return this._nome;
@@ -43,10 +36,6 @@ class CardVitrine {
 
     get descricao(){
         return this._descricao;
-    }
-
-    set descricao(newDescricao){
-        this._descricao = newDescricao;
     }
 
     get imagem(){
