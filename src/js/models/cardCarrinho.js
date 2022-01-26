@@ -1,9 +1,9 @@
-import {db} from "./../database_carrinho/db.js"
+import {db} from "../database_carrinho/db.js"
 
-class CardVitrine {
+class CardCarrinho {
 
     constructor({nome, preco, categoria, imagem}){
-        this._id = this.getMaxId() + 1;
+        this.id = this.getMaxId() + 1;
         this._nome = nome;
         this._preco = preco;
         this._categoria = categoria;
@@ -58,4 +58,4 @@ class CardVitrine {
     }
 }
 
-export {CardVitrine}
+export {CardCarrinho}

@@ -7,9 +7,6 @@ import { botoesAdicionar } from "../feature_carrinho/adicionar_carrinho.js"
 const inputDeBusca = document.querySelector("#inputDeBusca")
 const buttonBuscar = document.querySelector("#buscar")
 
-
-
-//Construindo função para buscar produtos por nome ou categoria
 const filtrarPorBusca = async (valorInput) => {
     const newArr = await arrProdutos
     const listaFiltroDeBusca = newArr.filter((produto) => {
@@ -22,17 +19,11 @@ const filtrarPorBusca = async (valorInput) => {
     addProdutoAoCarrinho(botoesAdicionar, listaFiltroDeBusca)
 }
 
-//Implementando evento de click com a função de filtrar
-//atraves dos nomes ou categorias
 
 buttonBuscar.addEventListener('click', () => {
     filtrarPorBusca(inputDeBusca.value)
-});
+})
 
-
-//Emplementando evento no campo de input de pesquisa, 
-//para atualiza a busca de formar automatica usando 
-//a função de filtrar
 inputDeBusca.addEventListener("input", () => {
     filtrarPorBusca(inputDeBusca.value)
 })

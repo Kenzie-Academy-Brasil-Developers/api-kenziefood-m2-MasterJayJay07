@@ -1,15 +1,11 @@
-// recebendo objetos da API
 import {arrProdutos} from "../fetch_api/fetch_API.js";
 const listaDestaque = document.querySelector(".ulPratos")
 
-
-//Função para criar o layout dos produtos
 const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
     const newArr = await produtos
     for(let cont = 0; cont < newArr.length; cont++){
         const {id,nome,preco,categoria,descricao,imagem} = newArr[cont]
 
-        //Criando as Tags para os cards de produtos
         let li = document.createElement("li")
         let img = document.createElement("img")
         let h4 = document.createElement("h4")
@@ -19,7 +15,6 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
         let span = document.createElement("span")
         let button = document.createElement("button")
 
-        //Implementando os dados nas tags do card
         img.src = imagem
         img.alt = nome
         h4.innerText = categoria
@@ -28,9 +23,7 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
         li.id = id
         span.innerText = `R$${preco.toFixed(2)}`
         button.innerText = TipoBotao
-        
-
-        //Referenciando e montando layout    
+          
         li.appendChild(img)
         li.appendChild(h4)
         li.appendChild(h3)
@@ -39,9 +32,7 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
         div.appendChild(button)
         li.appendChild(div)
         ulContainer.appendChild(li)
-
-
-        //Adicionando Class na Li de produtos   
+  
         li.classList.add("classePrato")
         button.classList.add(TipoBotao)
     }
