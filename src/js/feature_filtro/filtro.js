@@ -1,9 +1,6 @@
 /*FILTROS BASEADOS NA CATEGORIA DE CADA PRODUTO*/
 
 
-
-
-
 //FILTRO BASEADO NO BOTÃO DE FILTRO TODOS
 const mostrarTodos = () => {
 	listaDestaque.innerText = ""
@@ -43,40 +40,6 @@ const botaoMostrarPanificadora = document.querySelector('#mostrarPanificadora');
 botaoMostrarPanificadora.addEventListener('click', () => {
     filtrar("Panificadora")
 });
-
-
-
-
-
-//Pegando input de busca no HTML
-const inputDeBusca = document.querySelector("#inputDeBusca")
-
-
-
-
-const filtrarPorBusca = (valorInput) => {
-    const listaFiltroDeBusca = listaPratos.filter((produto) => {
-        if(produto.categoria.toLowerCase() === valorInput.toLowerCase()){
-            listaDestaque.innerHTML = ""
-            return produto.categoria
-            
-        } else if(produto.nome.toLowerCase() === valorInput.toLowerCase()){
-            listaDestaque.innerHTML = ""
-            return produto.categoria
-        }
-    })
-    construirLayoutPratos(listaDestaque, listaFiltroDeBusca, "adicionar")
-}
-
-
-
-//Pegando o button de busca por categoria ou nome e adicionando evento de click  
-//com a função de filtrar atraves dos nomes ou categorias
-const buttonBuscar = document.querySelector("#buscar")
-buttonBuscar.addEventListener('click', () => {
-    filtrarPorBusca(inputDeBusca.value)
-});
-
 
 
 //remover listaPratos e adicicionar array do fetch
