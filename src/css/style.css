@@ -266,7 +266,6 @@ input {
     }
 
     .secaoCarrinho__total{
-        display: flex;
         flex-wrap: wrap;
     }
 
