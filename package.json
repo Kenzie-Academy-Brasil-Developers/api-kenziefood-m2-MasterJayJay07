@@ -1,0 +1,23 @@
+{
+  "name": "api-kenziefood-m2-masterjayjay07",
+  "version": "1.0.0",
+  "description": "Nesse trabalho vocês terão que consumir uma API de produtos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/features-post-get/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenzie-Academy-Brasil-Developers/api-kenziefood-m2-MasterJayJay07.git"
+  },
+  "author": "Johao Pedro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kenzie-Academy-Brasil-Developers/api-kenziefood-m2-MasterJayJay07/issues"
+  },
+  "homepage": "https://github.com/Kenzie-Academy-Brasil-Developers/api-kenziefood-m2-MasterJayJay07#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
