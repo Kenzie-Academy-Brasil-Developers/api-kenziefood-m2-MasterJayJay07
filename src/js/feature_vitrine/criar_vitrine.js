@@ -8,7 +8,6 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
 
         let li = document.createElement("li")
         let img = document.createElement("img")
-        let icon = document.createElement("img")
         let h4 = document.createElement("h4")
         let h3 = document.createElement("h3")
         let p = document.createElement("p")
