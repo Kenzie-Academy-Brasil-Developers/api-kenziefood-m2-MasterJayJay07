@@ -183,6 +183,7 @@ body{
     justify-content: center;
     text-align: center;
     width: 320px;
+    min-height: 420px;
 }
 .iconeCarrinho{
     width: 39px;
