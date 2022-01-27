@@ -15,7 +15,6 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
         let div = document.createElement("div")
         let span = document.createElement("span")
         let button = document.createElement("button")
-        let figure = document.createElement("figure")
 
         img.src = imagem
         img.alt = nome
@@ -27,8 +26,6 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
         button.innerText = TipoBotao
           
         li.appendChild(img)
-        figure.appendChild(img)
-        li.appendChild(figure)
         li.appendChild(h4)
         li.appendChild(h3)
         li.appendChild(p)
