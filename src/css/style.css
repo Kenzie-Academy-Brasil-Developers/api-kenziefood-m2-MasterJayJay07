@@ -234,34 +234,5 @@ main {
         flex-wrap: wrap;
     }
 
-    /*.secaoCarrinho__listaItens li{
-        height: 70px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .secaoCarrinho__listaItens li img{
-        height: 70px;
-        width: 70px;
-        order: 1;
-        border-radius: 5px;
-    }
-
-    .secaoCarrinho__listaItens li h3{
-        order: 2;
-    }
-
-    .secaoCarrinho__listaItens li h4{
-        order: 3;
-    }
-
-    .secaoCarrinho__listaItens li div{
-        order: 4;
-        display: flex;
-        justify-content: space-between;
-    }*/
-
 
 }
