@@ -42,17 +42,30 @@
                     <section class="secaoCarrinho">
                         <h2 class="secaoCarrinho__titulo">Carrinho</h2>
                         <div class="secaoCarrinho__conteudo">
-                            <figure>
-                                <img src="./src/css/icones/carrinhoVazio.png" class="iconeCarrinho">
-                            </figure>
-                            <!-- <h2 class="mensagemCarrinho">Ops</h2> -->
+                            <div class="conteudoVazio">
+                                <figure>
+                                    <img src="./src/css/icones/carrinhoVazio.png" class="iconeCarrinho">
+                                </figure>
+                                <h2 class="mensagemCarrinho">Ops</h2>
+                                <h3>Por enquanto não temos produtos no carrinho</h3>
+                            </div>
+                        </div>
+                            
+                            
                             <ul class="secaoCarrinho__listaItens">
                             </ul>
                             <div class="secaoCarrinho__total">
-                                <p></p>
-                                <span id="total"></span>
-                                <!-- <p class="mensagemDeCarrinhoVazio">Por enquanto não temos produtos no carrinho</p> -->
-                                <span id="quantidadeTotal"></span>
+
+                                <div>
+                                    <p>Quantidade</p>
+                                    <span id="quantidadeTotal"></span>
+                                </div>
+
+                                <div>
+                                    <p class="total">Total</p>
+                                    <span id="total"></span>
+                                </div>
+                                
                             </div>
                         </div>
 
