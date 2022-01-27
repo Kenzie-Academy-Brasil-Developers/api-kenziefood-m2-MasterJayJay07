@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:wght@400;700&display=swap');
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    text-align: center;
+    background-color: #ffe9ee;
+    }
+
+.secaoCarrinho__titulo{
+    background-color: #FF2253;
+    border-radius: 14px 14px 0px 0px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#mostrarFrutas{
+    background-color: #FFE4EA;
+    border-radius: 20px;
+    border: none;
+    background-image: url(./icones/frutas.png);
+    background-position-y: center;
+    background-position-x: 8px;
+    background-repeat: no-repeat;
+    background-size: 21px;
+    width: 96px;
+    height: 40px;
+    text-align: end;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mostrarPanificadora{
+    border-radius: 20px;
+    border: none;
+    background-color: #FFF7F4;
+    background-image: url(./icones/pao.png);
+    background-position-y: center;
+    background-position-x: 9px;
+    background-repeat: no-repeat;
+    background-size: 21px;
+    width: 138px;
+    height: 40px;
+    text-align: end;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+#mostrarTodos{
+    border-radius: 20px;
+    width: 72px;
+    height: 40px;
+    font-size: 14px;
+    border: solid 2px;
+    font-family: 'Poppins', sans-serif;
+}
+#mostrarBebidas{
+    border-radius: 20px;
+    border: none;
+    background-color: #F3EEF5;
+    background-image: url(./icones/bebidas.png);
+    background-position-y: center;
+    background-position-x: 4px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    width: 95px;
+    height: 40px;
+    text-align: end;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image{
+    width: 17%;
+    vertical-align: middle;
+}
+.imageBuscar{
+    width: 21%;
+    vertical-align: middle;
+}
+.adicionar{
+    content-visibility: hidden;
+    border-radius: 20px;
+    border: none;
+    background-color: #F3EEF5;
+    background-image: url(./icones/carrinho.png);
+    background-position-y: center;
+    background-position-x: 7px;
+    background-repeat: no-repeat;
+    background-size: 19px;
+    width: 35px;
+    height: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+#buscar{
+    border-radius: 20px;
+    border: none;
+    background-color: #F3EEF5;
+    background-image: url(./icones/lupa.png);
+    background-position-y: center;
+    background-position-x: 8px;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    width: 29px;
+    height: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+.categoria{
+    background-color: #ffe9ee;
+    margin-top: 160px;
+    padding: 6px 18px;
+    border-radius: 30px;
+    position: absolute;
+    width: 100px;
+    font-size: 11px;
+    background-repeat: no-repeat;
+}

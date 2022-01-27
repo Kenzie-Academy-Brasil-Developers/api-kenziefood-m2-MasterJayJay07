@@ -1,0 +1,183 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+header{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header .logo{
+    margin-left: 15px;
+}
+
+header .sectionBusca{
+    display: flex;
+    justify-content: center;
+}
+
+header nav{
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    margin-left: 15px;
+    gap: 25px;
+}
+
+header nav button{
+    min-width: 100px;
+}
+
+main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container{
+    width: 100%;
+}
+
+.ulPratos {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    
+    /* não pode haver quebra, a lista com produtos deve ser possivel passar para o lado */
+}
+
+.ulPratos li {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ulPratos h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+.ulPratos p {
+    font-size: 12px;
+    margin: 10px 0;
+    color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+}
+
+.ulPratos li div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.ulPratos span {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ulPratos img {
+    width: 90%;
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 5px;
+}
+
+.conteudoPrincipalCarrinho{
+    margin-bottom: 20px;
+}
+
+.secaoCarrinho__titulo{
+    height: 60px;
+    color: white;
+    background-color: red;
+    margin-top: 20px
+}
+
+.secaoCarrinho__total{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8F9FA;
+    height: 60px;
+}
+
+.secaoCarrinho__total p{
+    display: none;
+}
+
+.secaoCarrinho__total #total{
+    display: none;
+}
+
+.secaoCarrinho__total .quant{
+    display: initial;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (min-width:715px){
+
+    main {
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    header{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header .logo{
+        width: 60%;
+        margin-left: 0px;
+    }
+
+    header nav{
+        width: 100%;
+    }
+
+    .secaoPratosDestaque{
+        width: 100%;
+    }
+
+    .ulPratos{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ulPratos li{
+        max-width: 300px;
+    }
+
+    .conteudoPrincipalCarrinho{
+        width: 300px;
+        margin-right: 15px;
+    }
+
+    .secaoCarrinho{
+        width: 100%;
+    }
+
+    .secaoCarrinho__total p{
+        display: initial;
+    }
+    
+    .secaoCarrinho__total #total{
+        display: initial;
+    }
+
+
+}
