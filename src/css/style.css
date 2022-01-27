@@ -106,7 +106,7 @@ main {
 }
 
 .secaoCarrinho__total{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     background-color: #F8F9FA;
@@ -135,6 +135,8 @@ main {
 
 .secaoCarrinho__listaItens{
     max-width: 320px;
+    max-height: 436px;
+    overflow-y: auto;
 }
 
 .secaoCarrinho__listaItens li{
