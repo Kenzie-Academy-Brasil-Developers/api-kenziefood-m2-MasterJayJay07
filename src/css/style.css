@@ -132,6 +132,37 @@ main {
     display: initial;
 }
 
+.secaoCarrinho__listaItens li{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.secaoCarrinho__listaItens li img{
+    height: 70px;
+    width: 70px;
+    order: 1;
+    border-radius: 5px;
+}
+
+.secaoCarrinho__listaItens li h3{
+    order: 2;
+}
+
+.secaoCarrinho__listaItens li h4{
+    order: 3;
+}
+
+.secaoCarrinho__listaItens li div{
+    order: 4;
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (min-width:715px){
 
     main {
@@ -142,6 +173,7 @@ main {
     header{
         flex-direction: row;
         flex-wrap: wrap;
+        padding-top: 20px;
     }
 
     header .logo{
@@ -153,8 +185,12 @@ main {
         width: 100%;
     }
 
-    .secaoPratosDestaque{
+    .containerCarrinho{
         width: 100%;
+    }
+
+    .secaoPratosDestaque{
+        width: 90%;
     }
 
     .ulPratos{
@@ -168,21 +204,64 @@ main {
     }
 
     .conteudoPrincipalCarrinho{
-        width: 300px;
-        margin-right: 15px;
+        width: 320px;
     }
 
     .secaoCarrinho{
         width: 100%;
     }
 
+    .secaoCarrinho__conteudo{
+        width: 100%;
+    }
+
     .secaoCarrinho__total p{
         display: initial;
+        width: 70%;
     }
     
     .secaoCarrinho__total #total{
         display: initial;
     }
+
+    .secaoCarrinho__titulo{
+        margin-top: 0px;
+        width: 320px;
+    }
+
+    .secaoCarrinho__total{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*.secaoCarrinho__listaItens li{
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .secaoCarrinho__listaItens li img{
+        height: 70px;
+        width: 70px;
+        order: 1;
+        border-radius: 5px;
+    }
+
+    .secaoCarrinho__listaItens li h3{
+        order: 2;
+    }
+
+    .secaoCarrinho__listaItens li h4{
+        order: 3;
+    }
+
+    .secaoCarrinho__listaItens li div{
+        order: 4;
+        display: flex;
+        justify-content: space-between;
+    }*/
 
 
 }
