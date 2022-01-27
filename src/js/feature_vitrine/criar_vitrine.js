@@ -1,4 +1,5 @@
 import {arrProdutos} from "../fetch_api/fetch_API.js";
+
 const listaDestaque = document.querySelector(".ulPratos")
 
 const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
@@ -8,7 +9,6 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
 
         let li = document.createElement("li")
         let img = document.createElement("img")
-        let icon = document.createElement("img")
         let h4 = document.createElement("h4")
         let h3 = document.createElement("h3")
         let p = document.createElement("p")
@@ -36,11 +36,14 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
   
         li.classList.add("classePrato")
         button.classList.add(TipoBotao)
+        img.classList.add("aligncenter")
         h4.classList.add("categoria")
+        h4.setAttribute('id', categoria)
     }
 
 }
 construirLayoutPratos(listaDestaque, arrProdutos, "adicionar")
+
 
 export {listaDestaque}
 

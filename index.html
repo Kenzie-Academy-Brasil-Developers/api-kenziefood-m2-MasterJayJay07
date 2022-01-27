@@ -13,15 +13,17 @@
     <body>
         <header>
             <figure class="logo">
-                <img src="#" alt="logo"/>
-                <figcaption>Logo da KenzieFood</figcaption>
+                <figure>
+                    <img src="./src/css/icones/logo.png" alt="Logo Kenzie">
+                </figure>
             </figure>
             <section class="sectionBusca">
-                <input type="text" id="inputDeBusca">
-                <button id="buscar">Buscar</button>
+                <input type="text" placeholder="Pesquisar por produto" id="inputDeBusca">
+                <button id="buscar"></button>
             </section>
             <nav id="botaosDoFiltro">
-                <button id="mostrarTodos">Todos</button>
+                <button id="mostrarTodos">Todos<Todos</button>
+
                 <button id="mostrarPanificadora">Panificadora</button>
                 <button id="mostrarFrutas">Frutas</button>
                 <button id="mostrarBebidas">Bebidas</button>
@@ -40,13 +42,30 @@
                     <section class="secaoCarrinho">
                         <h2 class="secaoCarrinho__titulo">Carrinho</h2>
                         <div class="secaoCarrinho__conteudo">
+                            <div class="conteudoVazio">
+                                <figure>
+                                    <img src="./src/css/icones/carrinhoVazio.png" class="iconeCarrinho">
+                                </figure>
+                                <h2 class="mensagemCarrinho">Ops</h2>
+                                <h3>Por enquanto não temos produtos no carrinho</h3>
+                            </div>
+                        </div>
+                            
+                            
                             <ul class="secaoCarrinho__listaItens">
                             </ul>
                             <div class="secaoCarrinho__total">
-                                <p class="total">Total</p>
-                                <span id="total">0,00</span>
-                                <p class="quant">Quantidade De Produtos</p>
-                                <span id="quantidadeTotal">0</span>
+
+                                <div>
+                                    <p>Quantidade</p>
+                                    <span id="quantidadeTotal"></span>
+                                </div>
+
+                                <div>
+                                    <p class="total">Total</p>
+                                    <span id="total"></span>
+                                </div>
+                                
                             </div>
                         </div>
 
