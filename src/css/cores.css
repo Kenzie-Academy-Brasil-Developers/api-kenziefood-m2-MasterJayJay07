@@ -93,6 +93,7 @@
     font-family: 'Poppins', sans-serif;
 }
 #buscar{
+    content-visibility: hidden;
     border-radius: 20px;
     border: none;
     background-color: #F3EEF5;

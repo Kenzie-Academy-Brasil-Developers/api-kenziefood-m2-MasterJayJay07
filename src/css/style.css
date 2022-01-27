@@ -52,14 +52,17 @@ main {
     width: 100%;
     overflow-x: auto;
     justify-content: flex-start;
-    
-    /* não pode haver quebra, a lista com produtos deve ser possivel passar para o lado */
 }
 
 .ulPratos li {
     min-width: 300px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.secaoCarrinho__listaItens h4 {
+    display: none;
 }
 
 .ulPratos h3 {
@@ -101,7 +104,7 @@ main {
     height: 60px;
     color: white;
     background-color: red;
-    margin-top: 20px
+    padding: 10px
 }
 
 .secaoCarrinho__total{
@@ -109,6 +112,7 @@ main {
     justify-content: space-between;
     background-color: #F8F9FA;
     height: 60px;
+    padding-top: 5px;
 }
 
 .secaoCarrinho__total p{
@@ -123,20 +127,57 @@ main {
     display: initial;
 }
 
+.secaoCarrinho__listaItens li{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.secaoCarrinho__listaItens li img{
+    height: 70px;
+    width: 70px;
+    order: 1;
+    border-radius: 5px;
+}
+
+.secaoCarrinho__listaItens li h3{
+    order: 2;
+}
+
+.secaoCarrinho__listaItens li h4{
+    order: 3;
+}
+
+.secaoCarrinho__listaItens li div{
+    order: 4;
+    display: flex;
+    justify-content: space-between;
+}
+
 button:hover {
     cursor: pointer;
 }
 
-@media (min-width:715px){
+input {
+    height: 26px;
+}
+
+@media (min-width:900px){
 
     main {
         flex-direction: row;
-        width: 100%;
+        max-width: 1296px;
     }
     
     header{
         flex-direction: row;
         flex-wrap: wrap;
+        padding-top: 20px;
+        max-width: 1250px;
     }
 
     header .logo{
@@ -148,8 +189,12 @@ button:hover {
         width: 100%;
     }
 
-    .secaoPratosDestaque{
+    .containerCarrinho{
         width: 100%;
+    }
+
+    .secaoPratosDestaque{
+        width: 90%;
     }
 
     .ulPratos{
@@ -163,21 +208,33 @@ button:hover {
     }
 
     .conteudoPrincipalCarrinho{
-        width: 300px;
-        margin-right: 15px;
+        width: 320px;
+        margin-top: -100px;
     }
 
     .secaoCarrinho{
         width: 100%;
     }
 
+    .secaoCarrinho__conteudo{
+        width: 100%;
+    }
+
     .secaoCarrinho__total p{
         display: initial;
+        width: 70%;
     }
     
     .secaoCarrinho__total #total{
         display: initial;
     }
 
+    .secaoCarrinho__titulo{
+        margin-top: 0px;
+        width: 320px;
+    }
 
-}
+    .secaoCarrinho__total{
+        display: flex;
+        flex-wrap: wrap;
+    }
