@@ -21,9 +21,6 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
         img.src = imagem
         img.alt = nome
         h4.innerText = categoria
-        // if(categoria==="Panificadora"){
-        //     document.h4.style.backgroundImage = 'url("pao.png")'
-        // }
         h3.innerText = nome
         p.innerText = descricao
         li.id = id
@@ -31,8 +28,8 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
         button.innerText = TipoBotao
           
         li.appendChild(img)
-        figure.appendChild(img)
-        li.appendChild(figure)
+        
+        
         li.appendChild(h4)
         li.appendChild(h3)
         li.appendChild(p)
@@ -43,7 +40,10 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
   
         li.classList.add("classePrato")
         button.classList.add(TipoBotao)
+        img.classList.add("aligncenter")
         h4.classList.add("categoria")
+        h4.setAttribute('id', categoria)
+        console.log(h4)
     }
 
 }
