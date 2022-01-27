@@ -55,7 +55,7 @@ body{
     background-position-x: 9px;
     background-repeat: no-repeat;
     background-size: 21px;
-    width: 138px;
+    min-width: 130px;
     height: 40px;
     text-align: end;
     font-size: 14px;

@@ -9,14 +9,12 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
 
         let li = document.createElement("li")
         let img = document.createElement("img")
-        let icon = document.createElement("img")
         let h4 = document.createElement("h4")
         let h3 = document.createElement("h3")
         let p = document.createElement("p")
         let div = document.createElement("div")
         let span = document.createElement("span")
         let button = document.createElement("button")
-        let figure = document.createElement("figure")
 
         img.src = imagem
         img.alt = nome
@@ -28,8 +26,6 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
         button.innerText = TipoBotao
           
         li.appendChild(img)
-        
-        
         li.appendChild(h4)
         li.appendChild(h3)
         li.appendChild(p)
@@ -43,7 +39,6 @@ const construirLayoutPratos = async (ulContainer, produtos, TipoBotao) => {
         img.classList.add("aligncenter")
         h4.classList.add("categoria")
         h4.setAttribute('id', categoria)
-        console.log(h4)
     }
 
 }
