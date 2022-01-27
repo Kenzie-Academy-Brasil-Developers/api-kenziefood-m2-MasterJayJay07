@@ -13,7 +13,10 @@
     <body>
         <header>
             <section class="sectionBusca">
-                <input type="text" id="inputDeBusca">
+                <figure>
+                    <img src="./src/css/icones/logo.png" alt="Logo Kenzie">
+                </figure>
+                <input type="text" placeholder="Pesquisar por produto" id="inputDeBusca">
                 <button id="buscar"></button>
             </section>
             <nav id="botaosDoFiltro">
@@ -37,13 +40,17 @@
                     <section class="secaoCarrinho">
                         <h2 class="secaoCarrinho__titulo">Carrinho</h2>
                         <div class="secaoCarrinho__conteudo">
+                            <figure>
+                                <img src="./src/css/icones/carrinhoVazio.png" class="iconeCarrinho">
+                            </figure>
+                            <h2 class="mensagemCarrinho">Ops</h2>
                             <ul class="secaoCarrinho__listaItens">
                             </ul>
                             <div class="secaoCarrinho__total">
-                                <p>Total</p>
-                                <span id="total">0,00</span>
-                                <p>Quantidade De Produtos</p>
-                                <span id="quantidadeTotal">0</span>
+                                <p></p>
+                                <span id="total"></span>
+                                <p class="mensagemDeCarrinhoVazio">Por enquanto não temos produtos no carrinho</p>
+                                <span id="quantidadeTotal"></span>
                             </div>
                         </div>
 
